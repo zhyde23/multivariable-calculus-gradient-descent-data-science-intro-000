@@ -57,13 +57,13 @@ Remember that the function looks like the following:
 
 ![](./parabolayx2.png)
 
-To take a derivative with respect to $x$ means to ask, how does the output change, as we make a nudge only in the $x$ direction. To express that we are nudging in the $x$ direction we say $\frac{\delta f}{\delta x}$.  That symbol is the lower case delta.  We read this as taking the derivative with respect to $x$.  But it just means seeing the change in output as we nudge in the $x$ direction.  
+To take a derivative with respect to $x$ means to ask, how does the output change, as we make a nudge only in the $x$ direction. To express that we are nudging in the $x$ direction we say $\frac{\partial f}{\partial x}$.  The $\partial$ symbol is used to denote the derivative of a multivariable function with respect to one of its variables.  We read $\frac{\partial f}{\partial x}$ as taking the derivative of $f$ with respect to $x$.  But it just means seeing the change in output as we nudge in the $x$ direction.  
 
-And to express the change in output with respect to $y$, we say $\frac{\delta f}{\delta y}$.  And this just means calculating the change in output as we nudge our input over in the $y$ direction.
+And to express the change in output with respect to $y$, we say $\frac{\partial f}{\partial y}$.  And this just means calculating the change in output as we nudge our input over in the $y$ direction.
 
 ### Visualizing the partial derivative
 
-So what does a derivative $\frac{\delta f}{\delta x}$ look like? How do we think of a partial derivative of a multivariable function?
+So what does a derivative $\frac{\partial f}{\partial x}$ look like? How do we think of a partial derivative of a multivariable function?
 
 Well remember how we think of a standard derivative of a one variable function, for example $f(x) = x^2 $. 
 
@@ -73,37 +73,37 @@ So in two dimensions, to take the derivative at a given point, we simply calcula
 
 Now the partial derivative of a multivariable function is fairly similar.  But here it's equal to the slope of the tangent line at a specific $x$ value **and** a specific $y$ value.  Let's break this down by using our patented "freeze-frame" method.  The graphs below shows lines tangent to the curve in the $x$ direction.  (The tangent lines are a little small, but they and their corresponding slopes are there). 
 
-#### Graphs for $\frac{df}{dx}$
+#### Graphs for $\frac{\partial f}{\partial x}$
 
 ![](./partial-derivatives-3d.png)
 
-Let's take a close look.  The top left graph shows $\frac{\delta f}{\delta x}$ at different points of $f(x, y)$ where $y = -1$.  So as you can see, $\frac{\delta f}{\delta x}f(3, -1) = -6$ as shown in the green line in the top left.  That's because when you move to that point on the graph, $(3, -1)$, and then nudge a little bit in the $x$ direction, the change in output is $-6$.  And that is represented by the line tangent to the function at that point in the $x$ direction.  You can go through the other points in these graphs, and work through the same logic. 
+Let's take a close look.  The top left graph shows $\frac{\partial f}{\partial x}$ at different points of $f(x, y)$ where $y = -1$.  So as you can see, $\frac{\partial f}{\partial x}f(3, -1) = -6$ as shown in the green line in the top left.  That's because when you move to that point on the graph, $(3, -1)$, and then nudge a little bit in the $x$ direction, the change in output is $-6$.  And that is represented by the line tangent to the function at that point in the $x$ direction.  You can go through the other points in these graphs, and work through the same logic. 
 
-So with taking the partial derivative $\frac{\delta f}{\delta x}$, you may think about moving to the slice of the graph for a given value of $y$, then moving to the proper value of $x$, and then finding the tangent line at that point.  
+So with taking the partial derivative $\frac{\partial f}{\partial x}$, you may think about moving to the slice of the graph for a given value of $y$, then moving to the proper value of $x$, and then finding the tangent line at that point.  
 
-As you can see, $\frac{\delta f}{dx}$ means the change in output from a nudge in $x$ direction, but the derivative is still influenced by $y$ component of the function.  You can see this because for different values of $y$, our slice of the graph looks different, and thus tangent lines for those slices look different.
+As you can see, $\frac{\partial f}{\partial x}$ means the change in output from a nudge in $x$ direction, but the derivative is still influenced by $y$ component of the function.  You can see this because for different values of $y$, our slice of the graph looks different, and thus tangent lines for those slices look different.
 
 ### One more example
 
-This can be a little mind-bending so let's go through this again for $\frac{df}{dy}f(x, y)$ where $f(x,y) = (yx^2) $.  Once again, the 3-d graph of $f(x,y) = yx^2$ is the following: 
+This can be a little mind-bending so let's go through this again for $\frac{\partial f}{\partial y}f(x, y)$ where $f(x,y) = (yx^2) $.  Once again, the 3-d graph of $f(x,y) = yx^2$ is the following: 
 
 ![](./parabolayx2.png)
 
-Now for $\frac{df}{dy}$ of a function $f(x, y) $ you can think sliding through different slices of the function but this time for different values of $x$.  So again, we have our freeze frame, but this time each frame represents ascending values along the x axis.  
+Now for $\frac{\partial f}{\partial y}$ of a function $f(x, y) $ you can think sliding through different slices of the function but this time for different values of $x$.  So again, we have our freeze frame, but this time each frame represents ascending values along the x axis.  
 
 First let's understand our plots below -- they may be surprising.  Starting at the top left quadrant the graph of the function $f(x,y)$ makes sense as when $x =-1$ then the function is just $f(y) = (-1)^2*y $.  And moving down to the bottom left, $f(2, y) = 2^2*y = 4y$.  
 
-So now, to think about taking the derivative, once again we move to a slice of graph for a value of $x$, and then move in the $y$ direction.  So $\frac{df}{dy}$ at $f(1, y) = 1 \cdot y$.  And we know that the derivative of a line is always just equal to the line's slope.  For $f(1, y)$ that slope, and thus the derivative (with respect to y), is always $1$.  For $f(2, y)$ it's 4.
+So now, to think about taking the derivative, once again we move to a slice of graph for a value of $x$, and then move in the $y$ direction.  So $\frac{\partial f}{\partial y}$ at $f(1, y) = 1 \cdot y$.  And we know that the derivative of a line is always just equal to the line's slope.  For $f(1, y)$ that slope, and thus the derivative (with respect to y), is always $1$.  For $f(2, y)$ it's 4.
 
-##### Graphs for $\frac{df}{dy}$
+##### Graphs for $\frac{\partial f}{\partial y}$
 
 ![](./partial-derivatives-dy.png)
 
-So that is our technique for a partial derivative.  For $\frac{df}{dy} $ we move to a slice of the curve at a specific value of $x$, move to the point for y, and then calculate the change in output as we nudge in the $y$ direction.  
+So that is our technique for a partial derivative.  For $\frac{\partial f}{\partial y} $ we move to a slice of the curve at a specific value of $x$, move to the point for y, and then calculate the change in output as we nudge in the $y$ direction.  
 
-For $\frac{df}{dx}$ (again below), we move to a slice of a curve of a specific value of $y$, move the correct value of $x$ and then calculate how much the output changes as we nudge in the $y$ direction.  Just think slide, slide then nudge.  That's a partial derivative.
+For $\frac{\partial f}{\partial x}$ (again below), we move to a slice of a curve of a specific value of $y$, move the correct value of $x$ and then calculate how much the output changes as we nudge in the $y$ direction.  Just think slide, slide then nudge.  That's a partial derivative.
 
-#### Graphs for $\frac{df}{dx}$
+#### Graphs for $\frac{\partial f}{\partial x}$
 
 ![](./partial-derivatives-3d.png)
 
@@ -111,27 +111,27 @@ For $\frac{df}{dx}$ (again below), we move to a slice of a curve of a specific v
 
 Ok, so now that you understand the slide, slide, nudge, maybe you can understand this little shortcut that we can pull.  For any multivariable function, the variables that you are **not** taking the derivative with respect to, can just be treated as a constant.
 
-For example, with our function of $f(x, y) = y*x^2 $, when taking the partial derivative $\frac{df}{dy}f(x, y)$, we treat all values of $y$ as a constant.  Let's do it:
+For example, with our function of $f(x, y) = y*x^2 $, when taking the partial derivative $\frac{\partial f}{\partial y}f(x, y)$, we treat all values of $y$ as a constant.  Let's do it:
 
 
-$$\frac{df}{dy}f(x,y) =  \frac{df}{dy}(y) * x^2 = 1*x^2 = x^2$$
+$$\frac{\partial f}{\partial y}f(x,y) =  \frac{\partial f}{\partial y}(y) * x^2 = 1*x^2 = x^2$$
 
 So that's all it means to take a partial derivative of something: look at what you are taking a derivative with respect to, and only take the derivative of those types of variables.  And guess what, this result lines up to what we saw earlier.
 
 ![](./partial-derivatives-dy.png)
 
-We calculated that $\frac{df}{dy}f(x,y) = x^2 $, and that is what the graphs show.  When $x = 2$ our derivative is always 4.  And when $x$ is $3$ the derivative is always 9.  So even though we are taking $\frac{df}{dy}$, the $x$ value is influencing the steepness of that line.  But by the time we get to our nudge, that value of $x$ is **constant**, it's influenced has already been applied, and then we are seeing how the output changes as we nudge in the $y$ direction.
+We calculated that $\frac{\partial f}{\partial y}f(x,y) = x^2 $, and that is what the graphs show.  When $x = 2$ our derivative is always 4.  And when $x$ is $3$ the derivative is always 9.  So even though we are taking $\frac{\partial f}{\partial y}$, the $x$ value is influencing the steepness of that line.  But by the time we get to our nudge, that value of $x$ is **constant**, it's influenced has already been applied, and then we are seeing how the output changes as we nudge in the $y$ direction.
 
-Now let's try our rule one more time, this time $\frac{df}{dx}f(x, y)$ for our function $f(x, y) = y*x^2 $.
+Now let's try our rule one more time, this time $\frac{\partial f}{\partial x}f(x, y)$ for our function $f(x, y) = y*x^2 $.
 
 
 
-$$\frac{df}{dx}f(x,y) = y*\frac{df}{dx}(x^2) = 2*y*x$$
+$$\frac{\partial f}{\partial x}f(x,y) = y*\frac{\partial f}{\partial x}(x^2) = 2*y*x$$
 
-So this time with $\frac{df}{dx}f(x,y) $, we treat $y$ as a constant, as the influence $y$ is first applied by moving to a slice of our graph for a value of $y$.  Then once there, we are evaluating the change in output as we nudge in the $x$ direction.   
+So this time with $\frac{\partial f}{\partial x}f(x,y) $, we treat $y$ as a constant, as the influence $y$ is first applied by moving to a slice of our graph for a value of $y$.  Then once there, we are evaluating the change in output as we nudge in the $x$ direction.   
 
 ![](./partial-derivatives-3d.png)
 
 ### Summary
 
-In this section, we have learned how to think about taking the partial derivative of a function.  For the partial derivative, we say we are taking the derivative with respect to a variable.  So for example, we can say for the function $f(x, y)$, take the partial derivative with respect to the variable $x$.  This means we are assessing the output after nudging in the $x$ direction, and we can express this as $\frac{\delta f}{\delta x} $.  Our rule for taking the partial derivative is to treat the variables that we are not taking the derivative with respect to as constants.  Which makes sense, because at the time that we are taking the derivative by making our "nudge" the only variable that is changing is the variable we are taking the derivative with respect to.
+In this section, we have learned how to think about taking the partial derivative of a function.  For the partial derivative, we say we are taking the derivative with respect to a variable.  So for example, we can say for the function $f(x, y)$, take the partial derivative with respect to the variable $x$.  This means we are assessing the output after nudging in the $x$ direction, and we can express this as $\frac{\partial f}{\partial x} $.  Our rule for taking the partial derivative is to treat the variables that we are not taking the derivative with respect to as constants.  Which makes sense, because at the time that we are taking the derivative by making our "nudge" the only variable that is changing is the variable we are taking the derivative with respect to.
