@@ -97,7 +97,7 @@ So now, to think about taking the derivative, once again we move to a slice of g
 
 ##### Graphs for $\frac{\partial f}{\partial y}$
 
-![](./partial-derivatives-dy.png)
+![](./partial-derivatives-dy-new.png)
 
 So that is our technique for a partial derivative.  For $\frac{\partial f}{\partial y} $ we move to a slice of the curve at a specific value of $x$, move to the point for y, and then calculate the change in output as we nudge in the $y$ direction.  
 
@@ -118,7 +118,7 @@ $$\frac{\partial f}{\partial y}f(x,y) =  \frac{\partial f}{\partial y}(y) * x^2 
 
 So that's all it means to take a partial derivative of something: look at what you are taking a derivative with respect to, and only take the derivative of those types of variables.  And guess what, this result lines up to what we saw earlier.
 
-![](./partial-derivatives-dy.png)
+![](./partial-derivatives-dy-new.png)
 
 We calculated that $\frac{\partial f}{\partial y}f(x,y) = x^2 $, and that is what the graphs show.  When $x = 2$ our derivative is always 4.  And when $x$ is $3$ the derivative is always 9.  So even though we are taking $\frac{\partial f}{\partial y}$, the $x$ value is influencing the steepness of that line.  But by the time we get to our nudge, that value of $x$ is **constant**, it's influenced has already been applied, and then we are seeing how the output changes as we nudge in the $y$ direction.
 
