@@ -3,7 +3,7 @@
 
 ### Learning Objectives
 
-* Understand how the process of gradient descent when altering both y-intercept and slope variables
+* Understand how gradient descent works when altering both y-intercept and slope variables
 * Understand what it means to take a partial derivative 
 * Understand the rule for taking partial derivatives
 
